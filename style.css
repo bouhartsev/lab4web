@@ -48,10 +48,11 @@ body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #151515;
+    font-size: 24px;
 }
 
 a {
-    color:#FFFFFF;
+    color: white;
     text-decoration: none;
 }
 
@@ -73,21 +74,41 @@ a {
     background-position: -1227px;
 }
 
-#logo {
+header {
+    display: block;
     position: absolute;
-    
-    top: 51px;
-    left: 865rem;
+    width: 100%;
+    margin-top: 51px;
+    padding: 0;
+}
+
+.header_content {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+#logo {
+    margin-left: 484rem;
     width: 191px;
     height: 93px;
     
     background: url("img/logo.png");
-    background-repeat: no-repeat;
+}
+
+.sm_icons_box {
+    margin-left: 176rem;
+}
+
+.sm_icons {
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat !important;
+    margin: 12px;
 }
 
 #sm_facebook {
-    left: 188rem;
-    top: 78px;
     width: 15px;
     height: 30px;
     
@@ -96,8 +117,6 @@ a {
 }
 
 #sm_instagram {
-    left: 227rem;
-    top: 79px;
     width: 30px;
     height: 29px;
     
@@ -118,8 +137,6 @@ a {
 }
 
 #sm_twitter {
-    left: 282rem;
-    top: 80px;
     width: 32px;
     height: 26px;
     
@@ -127,15 +144,17 @@ a {
 }
 
 #sm_linkedin {
-    left: 339rem;
-    top: 79px;
     width: 30px;
     height: 28px;
     
     background: url("img/sm_linkedin.png");
 }
 
-.sm_icons {
-    position: absolute;
-    background-repeat: no-repeat !important;
+#contact_us {
+    box-sizing: border-box;
+    margin-left: 454rem;
+    padding: 21px 23px;
+
+    border: 1px solid #06DD06;
+    box-shadow: 0 0 5px 0 #06DD06, inset 0 0 5px 0 #06DD06;
 }
