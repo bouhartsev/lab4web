@@ -25,12 +25,6 @@ html {
     background-color: transparent;
 }
 
-/*
-::-webkit-scrollbar-track {
-    background: blue;
-}
-*/
-
 ::-webkit-scrollbar-thumb {
     display: block;
     box-sizing: border-box;
@@ -64,6 +58,10 @@ body {
 a {
     color: white;
     text-decoration: none;
+}
+
+span {
+    backface-visibility: hidden!important;
 }
 
 .explotion1 {
@@ -146,12 +144,34 @@ header {
     margin: 12px;
 }
 
+.sm_icons::before {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: -10px;
+    left: -5px;
+    
+    content: "";
+    background: var(--green);
+    height: 130px;
+    width: 40px;
+    width: calc(100% + 10px);
+    
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.sm_icons:hover::before {
+    opacity: 1;
+}
+
 #sm_facebook {
-    width: 15px;
+    width: 30px;
     height: 30px;
     
     background: url("img/sm_facebook.png");
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 #sm_instagram {
@@ -159,19 +179,6 @@ header {
     height: 29px;
     
     background: url("img/sm_instagram.png");
-}
-
-#sm_instagram::before {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    left: -6px;
-    
-    content: "";
-    background: var(--green);
-    height: 117px;
-    width: 40px;
 }
 
 #sm_twitter {
@@ -191,31 +198,22 @@ header {
 #contact_us {
     font-size: 0.8em;
     
-    box-sizing: border-box;
     margin-left: 454rem;
-    padding: 21px 23px;
 
     border: 1px solid var(--green);
     box-shadow: 0 0 5px 0 var(--green), inset 0 0 5px 0 var(--green);
 }
 
-.btnCall {
-    display: inline-block;
-    position: relative;
-    
-    box-sizing: border-box;
+.button {
     margin-top: 1.4em;
-    padding: 20px 20px;
+    padding: 20px;
     
     line-height: 0.8;
-    
-    width: fit-content;
-    height: fit-content;
     
     background: var(--green) linear-gradient(to right, var(--gray) -300%, var(--green) 100%);
 }
 
-.btnCall::after {
+.button::before {
     display: block;
     position: absolute;
     top: 7px;
@@ -230,6 +228,40 @@ header {
     box-shadow: 0 0 5px 0 var(--green), inset 0 0 5px 0 var(--green);
     height: 100%;
     width: 100%;
+}
+
+.link {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    box-sizing: border-box;
+    
+    padding: 20px;
+    padding-left: calc(20px + 0.50em);
+    transition: padding-left 0.2s ease-in-out;
+}
+
+.link:hover {
+    padding-left: 20px;
+}
+
+.link::after {
+    display: inline-block;
+    margin-left: -0.25em;
+    content: "→";
+    opacity: 0;
+    
+    will-change: opacity, transform;
+    
+    transform: translate3d(-0.5em, 0, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+.link:hover::after {
+    margin-left: 0.25em;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
 }
 
 main {
@@ -365,8 +397,8 @@ main {
     box-shadow: 0 0 30px 0 rgba(var(--greenRGB), 0.4), inset 0 0 30px 0 rgba(var(--greenRGB), 0.4);
 }
 .banner_product::after {
-    clip-path: polygon(100% 50%, 50% 100%, 100% 100%);
-    z-index: 1;
+    clip-path: polygon(110% 50%, 50% 110%, 110% 110%);
+    z-index: 2;
 }
 
 .banner_product_line {
@@ -415,4 +447,24 @@ main {
 .banner_product_text>span:nth-child(2n) {
     color: var(--green);
     transform: scale(-1, 1);
+}
+
+.play_icon {
+    display: block;
+    width: 40px;
+    height: 45px;
+    position: relative;
+    left: 50px;
+}
+
+.play_icon::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -60%;
+    left: -35px;
+    width: 108px;
+    height: 103px;
+    border: 1px solid var(--green);
+    border-radius: 100%;
 }

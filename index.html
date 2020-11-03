@@ -8,12 +8,22 @@
     
     <title>Weblab 4</title>
     
+    <link rel="preload" href="img/polytech_logo_black.png" as="image"/>
+    <link rel="preload" href="load.css" as="style" />
+    
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="load.css">
 </head>
 
 <body>
+<!--
+   <div class="load">
+      <div class="circle_box"><div class="circle"></div></div>
+   </div>
+-->
    <div class="explotion1" id="exp1"></div>
+   
    <div class="explotion2" id="exp2"></div>
    <div class="explotion1" id="exp3"></div>
    <div class="explotion1" id="exp4"></div>
@@ -25,17 +35,17 @@
             <a href="https://example.com/linkedin" class="sm_icons" id="sm_linkedin"></a>
         </div>
         <a href="/" id="logo" class="header_content"></a>
-        <a href="mailto:name@example.com" id="contact_us" class="header_content">Contáctenos →</a>
+        <a href="mailto:name@example.com" id="contact_us" class="header_content link">Contáctenos</a>
     </header>
     <main>
         <div class="banner">
             <div class="text">
                 <h2>BANNER <br> DEL PRODUCTO</h2>
                 <p>Descripción del producto, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
-                <a href="https://example.com/action" class="btnCall">CALL TO ACTION →</a>
+                <a href="https://example.com/action" class="button link">CALL TO ACTION</a>
             </div>
             <div class="banner_image">
-                <img src="img/Girl.png" id="girl">
+                <img src="img/Girl.png" alt="girl" id="girl">
                 <div class="banner_image_text1">
                     <span>L o r</span>
                     <span><br>e n i</span>
@@ -47,7 +57,7 @@
                 </div>
             </div>
             <div class="banner_product">
-                <img src="img/Product.png" id="blouse">
+                <img src="img/Product.png" alt="blouse" id="blouse">
                 <div class="banner_product_line"></div>
                 <div class="banner_product_text">
                     <span>2</span>
@@ -57,9 +67,29 @@
                 </div>
             </div>
         </div>
+        <div class="content">
+            <div class="video">
+               <video width="480" height="270" controls preload="metadata" poster="">
+                   <source src="" type="video/mp4">
+                   Видео не поддерживается вашим браузером.
+               </video>
+                <div class="play_icon">
+                    <img src="img/play.png" alt="play icon">
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <!--        Let it be-->
+        </div>
+        <div class="quote">
+            <!--        Let it be-->
+        </div>
+        <div class="form">
+            <!--        Let it be-->
+        </div>
     </main>
     <footer>
-<!--        Let it be-->
+        <!--        Let it be-->
     </footer>
 </body>
 </html>
