@@ -24,7 +24,7 @@
 -->
    <div class="explotion1" id="exp1"></div>
    <div class="explotion2" id="exp2"></div>
-   <div class="explotion1" id="exp3"></div>
+   <div class="explotion2" id="exp3"></div>
    <div class="explotion1" id="exp4"></div>
     <header>
         <div class="sm_icons_box header_content">
@@ -69,11 +69,11 @@
         <div class="content">
         	<div class="video">
 				<video width="976" height="555" preload="metadata" poster="img/video_poster.png" id="video_promo">
-				   <source src="https://redirector.googlevideo.com/videoplayback?expire=1604527599&ei=jtGiX6PqPMK_yAXZ96-IDA&ip=193.109.120.156&id=o-AFDW1Q30hlS93clXWtxPX3yih6wTRc48YXgm8FTsHmRn&itag=22&source=youtube&requiressl=yes&mh=VT&mm=31%2C29&mn=sn-u3h5gvnoxu-qhxe%2Csn-axq7sn7l&ms=au%2Crdu&mv=m&mvi=1&pl=24&nh=%2CIgpwcjAzLmxlZDAzKgkxMjcuMC4wLjE&initcwndbps=1453750&vprv=1&mime=video%2Fmp4&ratebypass=yes&dur=22.569&lmt=1588334502431703&mt=1604505877&fvip=1&c=WEB&txp=6216222&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRQIgf8pa5qrFN0X6BFoJTFVp-C_YgYBcyQTLzSCIkuV-HhMCIQDcT_BQ5tXrFfqD8DQ35ziLw9VqF8PDuX7G4NPONkShOg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cnh%2Cinitcwndbps&lsig=AG3C_xAwRAIgBoUKVjANXLm-MU1Db9BB9r5FLgtx7mnSQv9euYpKeDQCIHq8Nt-siooYb0XbtJOlFxxUwiqqdukg2YV5v1Sq-MpL&title=Заметки_программиста_#0_%7C%7C_Тизер" type="video/mp4">
+				   <source src="https://www.hdclub.ua/files/avpedia_test/tron_legacy_trailer.mp4" type="video/mp4">
 				   Видео не поддерживается вашим браузером.
 				</video>
                	<div class="text_video"><p>VIDEO<br>PROMO DEL<br>PRODUCTO</p></div>
-                <div class="play_icon" id="video_poster">
+                <div class="play_icon">
                     <img src="img/play.png" alt="play icon">
                 </div>
             </div>
@@ -85,12 +85,45 @@
             </div>
         </div>
         <div class="slider">
-			<div id="product01" class="product_left"></div>
-			<div id="product02" class="product_select"></div>
-			<div id="product03" class="product_right"></div>
+			<div id="product01" class="slider_product not_select">
+				<div class="slider_image">
+					<img src="img/ball.png" alt="ball">
+					<div class="img_text">Ref<span>219</span></div>
+				</div>
+				<div class="text">
+					<h4>NOMBRE DEL PRODUCTO</h4>
+					<h5>$99.999</h5>
+					<p>Descripción del producto, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.</p>
+					<a href="https://example.com/product01" class="link product_link">VER DETALLES</a>
+				</div>
+			</div>
+			<div id="product02" class="slider_product product_select">
+				<div class="slider_image">
+					<img src="img/bottle.png" alt="bottle">
+					<div class="img_text">Ref<span>230</span></div>
+				</div>
+				<div class="text">
+					<h4>NOMBRE DEL PRODUCTO SELECCIONADO</h4>
+					<h5>$99.999</h5>
+					<p>Descripción del producto, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.</p>
+					<a href="https://example.com/product02" class="link button">VER DETALLES</a>
+				</div>
+			</div>
+			<div id="product03" class="slider_product not_select">
+				<div class="slider_image">
+					<img src="img/cup.png" alt="cup">
+					<div class="img_text">Ref<span>286</span></div>
+				</div>
+				<div class="text">
+					<h4>NOMBRE DEL PRODUCTO</h4>
+					<h5>$99.999</h5>
+					<p>Descripción del producto, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et.</p>
+					<a href="https://example.com/product03" class="link product_link">VER DETALLES</a>
+				</div>
+			</div>
 			<div class="slider_controllers">
+				<div class="controller" id="forward"></div>
 				<div class="controller" id="back"></div>
-				<div class="controller"></div>
 				<div class="product_number"><span>02</span>/03</div>
 			</div>
         </div>
