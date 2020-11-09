@@ -1,27 +1,26 @@
 <!doctype html>
-<html lang="ru">
+<!--<html lang="ru">-->
 <!--Change lang-->
-<!--<html lang="es">-->
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Language" content="es">
     
     <title>Weblab 4</title>
     
-    <link rel="preload" href="img/polytech_logo_black.png" as="image"/>
-    <link rel="preload" href="load.css" as="style" />
+    <link rel="preload" href="./img/polytech_logo_black.png" as="image"/>
+    <link rel="preload" href="./load.css" as="style" />
     
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="load.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./load.css">
 </head>
 
 <body>
-<!--
    <div class="load">
       <div class="circle_box"><div class="circle"></div></div>
    </div>
--->
    <div class="explotion1" id="exp1"></div>
    <div class="explotion2" id="exp2"></div>
    <div class="explotion2" id="exp3"></div>
@@ -43,8 +42,8 @@
                 <p>Descripción del producto, lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy.</p>
                 <a href="https://example.com/action" class="button link">CALL TO ACTION</a>
             </div>
-            <div class="banner_image">
-                <img src="img/Girl.png" alt="girl" id="girl">
+            <div class="banner_image notranslate" translate="no">
+                <img src="./img/Girl.png" alt="girl" id="girl">
                 <div class="banner_image_text1">
                     <span>L o r</span>
                     <span><br>e n i</span>
@@ -56,7 +55,7 @@
                 </div>
             </div>
             <div class="banner_product">
-                <img src="img/Product.png" alt="blouse" id="blouse">
+                <img src="./img/Product.png" alt="blouse" id="blouse">
                 <div class="banner_product_line"></div>
                 <div class="banner_product_text">
                     <span>2</span>
@@ -68,13 +67,13 @@
         </div>
         <div class="content">
         	<div class="video">
-				<video width="976" height="555" preload="metadata" poster="img/video_poster.png" id="video_promo">
+				<video width="976" height="555" preload="metadata" poster="./img/video_poster.png" id="video_promo">
 				   <source src="https://www.hdclub.ua/files/avpedia_test/tron_legacy_trailer.mp4" type="video/mp4">
 				   Видео не поддерживается вашим браузером.
 				</video>
                	<div class="text_video"><p>VIDEO<br>PROMO DEL<br>PRODUCTO</p></div>
                 <div class="play_icon">
-                    <img src="img/play.png" alt="play icon">
+                    <img src="./img/play.png" alt="play icon">
                 </div>
             </div>
             <div class="text">
@@ -86,8 +85,8 @@
         </div>
         <div class="slider">
 			<div id="product01" class="slider_product not_select">
-				<div class="slider_image">
-					<img src="img/ball.png" alt="ball">
+				<div class="slider_image notranslate" translate="no">
+					<img src="./img/ball.png" alt="ball">
 					<div class="img_text">Ref<span>219</span></div>
 				</div>
 				<div class="text">
@@ -98,8 +97,8 @@
 				</div>
 			</div>
 			<div id="product02" class="slider_product product_select">
-				<div class="slider_image">
-					<img src="img/bottle.png" alt="bottle">
+				<div class="slider_image notranslate" translate="no">
+					<img src="./img/bottle.png" alt="bottle">
 					<div class="img_text">Ref<span>230</span></div>
 				</div>
 				<div class="text">
@@ -110,8 +109,8 @@
 				</div>
 			</div>
 			<div id="product03" class="slider_product not_select">
-				<div class="slider_image">
-					<img src="img/cup.png" alt="cup">
+				<div class="slider_image notranslate" translate="no">
+					<img src="./img/cup.png" alt="cup">
 					<div class="img_text">Ref<span>286</span></div>
 				</div>
 				<div class="text">
@@ -131,14 +130,14 @@
             <!--        Let it be-->
         </div>
         <div class="form_data">
-          <form id="form_data">
+          <form id="form_data" autocomplete="off">
 			<h2>¿QUIÉRES MÁS <span>INFORMACIÓN?</span></h2>
 			<input type="text" form="form_data" name="name" placeholder="Nombre completo*" required class="lineinput">
 			<input type="email" form="form_data" name="email" placeholder="Correo electrónico*" required class="lineinput">
 			<input type="tel" form="form_data" name="phone" placeholder="Celular*" required class="lineinput">
 			<input type="text" form="form_data" name="city" placeholder="Ciudad*" required class="lineinput">
 			<input type="text" list="product_list" form="form_data" name="product" placeholder="Elige un producto*" required class="lineinput">
-				<datalist id="product_list">
+			<datalist id="product_list">
 				<option>Blusa</option>
 				<option>Campera</option>
 			</datalist>
