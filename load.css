@@ -16,6 +16,7 @@
 }
 
 .circle_box {
+	position: relative;
     margin: auto;
     margin-top: 40vh;
     width: fit-content;
@@ -40,5 +41,23 @@
     }
     100% {
         transform: rotateZ(360deg);
+    }
+}
+
+.circle_box>p {
+	position: absolute;
+	width: 300px;
+	top: 150px;
+	left: -30px;
+	animation: error 0.2s 3s linear;
+	opacity: 0;
+}
+
+@keyframes error {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
