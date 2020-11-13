@@ -7,7 +7,7 @@
     right: 0;
     z-index: 100;
     background: var(--gray);
-    animation: loading 1s linear 0s 1 forwards;
+    animation: loading 3s linear 0s 1 forwards;
 }
 
 @keyframes loading {
@@ -31,7 +31,7 @@
     mix-blend-mode: lighten !important;
     width: 150px;
     height: 150px;
-    animation: cicrle_rotate 3 1s linear;
+    animation: cicrle_rotate 5 1s linear;
     
 }
 

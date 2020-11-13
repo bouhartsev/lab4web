@@ -955,6 +955,10 @@ blockquote>p {
 	display: inline;
 }
 
+blockquote a {
+	max-width: 37%;
+}
+
 .quote_image::before {
 	content: "";
 	
@@ -1156,20 +1160,23 @@ hr {
 	background: radial-gradient(circle, var(--green) 80%, rgba(0,0,0,0) 100%);
 }
 
-.box1 {
+.footer_box {
+	width: 100%;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 50px 170px;
+	padding: 50px 90px;
 	text-align: center;
 }
 
 #subscribe {
-	display:inline-block;
+	display: inline-block;
 	position: relative;
 	
 	width: fit-content;
 	
 	font-family: var(--font_head);
+	font-size: 1.3em;
+	
 	font-weight: 500;
 	letter-spacing: 0.05em;
 }
@@ -1216,14 +1223,26 @@ hr {
 	box-shadow: 0 0 5px 0 var(--green), inset 0 0 5px 0 var(--green);
 }
 
+.footer_box>div {
+	display: inline-block;
+	text-align: left;
+	width: fit-content;
+	
+	vertical-align: top;
+	letter-spacing: 0.05em;
+	
+	margin-top: 80px;
+	font-weight: 300;
+}
+
 .socials {
 	text-align: left;
 }
 
 footer h5 {
-	font-size: 1em;
+	font-size: 1.2em;
 	font-weight: 400;
-	letter-spacing: 0.1em;
+	margin-bottom: 0.8em;
 }
 
 .socials>.sm_icons {
@@ -1265,4 +1284,51 @@ footer h5 {
     height: 28px;
     
     background: url("./img/sm_linkedin_foot.png");
+}
+
+footer p {
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+
+footer b {
+	font-weight: 500;
+}
+
+.contacts {
+	margin-left: 110rem;
+}
+
+.address {
+	margin-left: 120rem;
+}
+
+.address>p>a {
+	background-size: contain;
+	background-repeat: no-repeat !important;
+}
+
+#to_maps {
+	background: url("img/icon_maps.png");
+	padding-left: 35px;
+}
+
+#to_waze {
+	padding-left: 45px;
+	margin-left: 30px;
+	background: url("img/icons_waze.png");
+}
+
+.footer_box>.box2_content {
+	display: inline-block;
+	text-align: left;
+	width: fit-content;
+	
+	vertical-align: top;
+	
+	font-size: 0.7em;
+	letter-spacing: 0.05em;
+	
+	font-weight: 300;
+	margin: 0 90rem;
 }
