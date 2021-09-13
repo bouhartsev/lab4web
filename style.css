@@ -13,8 +13,11 @@
 
 html {
     font-size: 1px;
-    font-size: calc(100vw/1920) !important;
+    /* font-size: calc(100vw/1920) !important; */
 /*    Хоть какой-то адаптив*/
+	width: 1920px;
+	position:relative;
+	margin: auto;
 }
 
 ::-moz-selection {
